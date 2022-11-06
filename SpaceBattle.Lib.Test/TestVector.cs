@@ -1,5 +1,5 @@
 namespace SpaceBattle.Lib.Test;
-public class VectorTest
+public class TestVector
 {
     [Fact]
     public void OutString()

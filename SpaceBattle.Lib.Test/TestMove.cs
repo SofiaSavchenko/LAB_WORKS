@@ -1,6 +1,6 @@
 namespace SpaceBattle.Lib.Test;
 using Moq;
-public class MoveCommandTests
+public class TestMove
 {
     [Fact]
     public void TestPositiveMove()
