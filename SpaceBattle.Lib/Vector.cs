@@ -71,15 +71,6 @@ public class Vector
             return new Vector(mass);
         }
     }
-    public static Vector operator *(int a, Vector b)
-    {
-        int[] mass = new int[b.Size];
-        for(int i = 0; i < b.Size; i++)
-        {
-            mass[i] = a * b[i];
-        }
-        return new Vector(mass);
-    }
     public static bool operator ==(Vector a, Vector b)
     {
         if (a.Size != b.Size)
@@ -115,35 +106,5 @@ public class Vector
     public override int GetHashCode()
     {
         return HashCode.Combine(Vec);
-    }
-    public static bool operator <(Vector a, Vector b)
-    {
-        if (a.Size > b.Size)
-        {
-            return false;
-        }
-        for (int i = 0; i < a.Size; i++)
-        {
-            if (a[i] > b[i])
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-    public static bool operator >(Vector a, Vector b)
-    {
-        if (a.Size < b.Size)
-        {
-            return false;
-        }
-        for (int i = 0; i < a.Size; i++)
-        {
-            if (a[i] < b[i])
-            {
-                return false;
-            }
-        }
-        return true;
     }
 }
