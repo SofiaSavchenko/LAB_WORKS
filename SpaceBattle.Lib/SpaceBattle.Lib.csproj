@@ -12,3 +12,4 @@
     <PackageReference Include="Hwdtech.Core" Version="1.0.0"/>
   </ItemGroup>
 </Project>
+
